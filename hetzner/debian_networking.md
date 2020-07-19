@@ -1,5 +1,6 @@
 ## Debian config file
 
+More info from hetzner website: [[https://wiki.hetzner.de/index.php/Netzkonfiguration_Debian/en]](https://wiki.hetzner.de/index.php/Netzkonfiguration_Debian/en)
 ```
 auto lo
 iface lo inet loopback
@@ -42,4 +43,5 @@ post-up ip addr add 85.10.197.147/32 dev enp3s0
 ```
 
 Adding the second IP is just added as a post-up command
+
 

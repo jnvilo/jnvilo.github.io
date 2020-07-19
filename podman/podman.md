@@ -24,3 +24,4 @@ podman ps -a
 ## inspect containers
 ```
 podman inspect 3482d923dw324 
+```

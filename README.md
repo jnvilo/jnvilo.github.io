@@ -11,3 +11,7 @@ This pages exist for the following reasons:
 - [K3s](k3s.html)
 - [Kubernetes/How to pull from private registry using secrets](kubernetes/secrets.html)
 - [Kubernetes/CheatSheet](kubernetes/cheatsheet.html)
+
+##Hetzner
+
+- [Debian /etc/network/interfaces](hetzner/debian_networking.md)

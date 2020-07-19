@@ -7,5 +7,5 @@ This pages exist for the following reasons:
 
 ## Pages
 
-- [Kubernetes Cheat Notes](k8s_cheatnotes.md)
-- [K3s](k3s.md)
+- [Kubernetes Cheat Notes](k8s_cheatnotes.html)
+- [K3s](k3s.html)

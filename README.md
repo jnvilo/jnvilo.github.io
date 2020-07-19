@@ -9,4 +9,4 @@ This pages exist for the following reasons:
 
 - [Kubernetes Cheat Notes](k8s_cheatnotes.html)
 - [K3s](k3s.html)
-- Kubernetes/[secrets.md](How to pull from private registry using secrets)
+- Kubernetes/[secrets.html](How to pull from private registry using secrets)

@@ -2,9 +2,11 @@
 Create this Secret, naming it regcred:
 
 ```
-kubectl create secret docker-registry regcred --docker-server=<your-registry-server> --docker-username=<your-name> --docker-password=<your-pword> --docker-email=<your-email>```
+kubectl create secret docker-registry regcred --docker-server=<your-registry-server> --docker-username=<your-name> --docker-password=<your-pword> --docker-email=<your-email>
+```
 
 where:
+
 
 - <your-registry-server> is your Private Docker Registry FQDN. (https://index.docker.io/v1/ for DockerHub)
 - <your-name> is your Docker username.

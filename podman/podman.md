@@ -11,6 +11,18 @@ podman build --tag centos:8 -f Dockerfile
 podman run --rm registry.redhat.io/ubi8/ubi cat /etc/os-release
 ```
 
+## run a container 
+The container will run the default ENTRYPOINT if not command is given as above.
+```
+pordman run registry.redhat.io/project/image:latest 
+```
+We can also pass ports as follows:
+```
+podman run - 8000:8000 registry.redhat.io/project/image:latest 
+```
+
+
+
 ## exec
 ```
 podman  
@@ -25,3 +37,9 @@ podman ps -a
 ```
 podman inspect 3482d923dw324 
 ```
+
+## podman tag
+```
+podman tag 474ff279782b myrhel8:8.0
+```
+

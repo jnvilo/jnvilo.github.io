@@ -23,3 +23,11 @@ This pages exist for the following reasons:
 
 ## Github
 - [docker ci](github/docker_ci.html)
+
+## Nginx
+- [proxypass example](nginx/proxypass.html)
+
+
+## Others
+
+- [certbot examples](certbot.html)

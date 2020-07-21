@@ -31,3 +31,5 @@ This pages exist for the following reasons:
 ## Others
 
 - [certbot examples](certbot.html)
+- [ssh,scp,rsync](ssh.html)
+

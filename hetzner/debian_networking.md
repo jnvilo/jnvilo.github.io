@@ -42,12 +42,26 @@ iface br0 inet static
 	gateway 85.10.197.129
 	bridge_ports enp3s0
 	bridge_stp off
-	pointtopoint 86.10.197.129
 	up route add -net 85.10.197.128 netmask 255.255.255.224 gw 85.10.197.129 dev br0
 	post-up   echo 1 > /proc/sys/net/ipv4/ip_forward
 	post-up   iptables -t nat -A POSTROUTING -s '10.222.0.0/16' -o br0 -j MASQUERADE
 	post-down iptables -t nat -D POSTROUTING -s '10.222.0.0/16' -o br0 -j MASQUERADE
+	post-up iptables -t nat -A PREROUTING -i br0 -p tcp --dport 943 -j DNAT --to 10.222.222.254:943
+	post-down iptables -t nat -D PREROUTING -i br0 -p tcp --dport 943 -j DNAT --to 10.222.222.254:943
+
+	
+
+	
 # route 85.10.197.128/27 via 85.10.197.129
+
+auto br1
+iface br1 inet static
+	address 85.10.197.147/27
+ 	bridge_ports ep3s0
+	bridge_stp_off
+		
+	
+
 
 auto vmbr0
 iface vmbr0 inet static
@@ -55,6 +69,14 @@ iface vmbr0 inet static
 	bridge-ports none
 	bridge-stp off
 	bridge-fd 0
+
+auto vmbr1
+iface vmbr1 inet static
+	address 10.222.223.1/24
+	bridge-ports none
+	bridge-stp off
+	bridge-fd 0
+
 
 
 
